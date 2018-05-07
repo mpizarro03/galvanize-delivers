@@ -1,13 +1,16 @@
 
 
-.icon-block {
+/* .icon-block {
   padding: 0 15px;
 }
-.icon-block .material-icons {
+.icon-block */
+
+.material-icons {
 	font-size: inherit;
+  padding-right: 10px;
 }
   .hero {
-    background-image: url("/Users/mpizarro34/g89/workspace/q1/week03/galvanize-delivers/img/hero.jpg");
+    background-image: url("/img/hero.jpg");
     background-repeat: no-repeat;
     height: 60vh;
     background-size: cover;

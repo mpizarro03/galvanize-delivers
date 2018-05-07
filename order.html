@@ -27,25 +27,26 @@
     </ul>
   </nav>
 
-  <div class="section no-pad-bot" id="index-banner">
-  </div>
+  <!-- <div class="section no-pad-bot" id="index-banner">
+  </div> -->
   <div class="row">
     <div class="container">
       <div class="row">
-        <div class="col s12 l6">
+        <div class="col s12 l7">
           <h3>Menu</h3>
           <div class="row">
             <div class="col s12 l6">
               <!-- 1st row of cards,first card -->
               <div class="card">
                 <div class="card-image">
-                  <img class="responsive-img" src="img/burger.jpg">
+                  <img class="responsive-img" src="img/burger.jpg" alt="burger">
                 </div>
                 <div class="card-content">
-                  <p>$</p>
+                  <span class="card-title">Royale with Cheese</span>
+                  <p>$8.99</p>
                 </div>
                 <div class="card-action">
-                  <a href="#">This is a link</a>
+                  <a href="#" class="pink-text text-accent-2">Add to Order</a>
                 </div>
               </div>
             </div>
@@ -53,13 +54,14 @@
               <!-- second card -->
               <div class="card">
                 <div class="card-image">
-                  <img class="responsive-img" src="img/pizza.jpg">
+                  <img class="responsive-img" src="img/pizza.jpg" alt="pizza">
                 </div>
                 <div class="card-content">
-                  <p>$</p>
+                  <span class="card-title">Arugula Pie</span>
+                  <p>$11.99</p>
                 </div>
                 <div class="card-action">
-                  <a href="#">This is a link</a>
+                  <a href="#" class="pink-text text-accent-2">Add to Order</a>
                 </div>
               </div>
             </div>
@@ -72,10 +74,11 @@
                   <img class="responsive-img" src="img/ribs.jpg">
                 </div>
                 <div class="card-content">
-                  <p>$</p>
+                  <span class="card-title">Smoked Swine</span>
+                  <p>$14.99</p>
                 </div>
                 <div class="card-action">
-                  <a href="#">This is a link</a>
+                  <a href="#" class="pink-text text-accent-2">Add to Order</a>
                 </div>
               </div>
             </div>
@@ -86,17 +89,18 @@
                   <img class="responsive-img" src="img/ice_cream.jpg">
                 </div>
                 <div class="card-content">
-                  <p>$</p>
+                  <span class="card-title">Ice Cream Biscuit</span>
+                  <p>$7.99</p>
                 </div>
                 <div class="card-action">
-                  <a href="#">This is a link</a>
+                  <a href="#" class="pink-text text-accent-2">Add to Order</a>
                 </div>
               </div>
             </div>
           </div>
 
         </div>
-        <div class="col s12 l6">
+        <div class="col s12 l5">
           <h3>Order</h3>
           <table class="striped responsive-table">
             <thead>
@@ -105,37 +109,57 @@
                 <th class="right">Price</th>
               </tr>
             </thead>
-
+            <tbody>
+            </tbody>
+          </table>
+          <table id="totals">
             <tbody>
               <tr>
-                <td></td>
-                <td class="right"></td>
+                <td class="right subtotal">$0.00</td>
+                <td class="right" colspan="2">Subtotal</td>
               </tr>
               <tr>
-                <td></td>
-                <td class="right"></td>
+                <td class="right tax">$0.00</td>
+                <td class="right" colspan="2">Tax</td>
               </tr>
               <tr>
-                <td></td>
-                <td class="right"></td>
+                <td class="right total">$0.00</td>
+                <td class="right" colspan="2">Total</td>
               </tr>
             </tbody>
           </table>
 
 
 
+
+          <div class="row">
+            <form class="col s12">
+              <div class="row">
+                <div class="input-field col s12">
+                  <i class="material-icons prefix pink-text accent-2">account_circle</i>
+                  <input placeholder="Bill Gates" id="name" type="text" class="validate">
+                  <label for="name">First Name</label>
+                </div><br>
+                <div class="input-field col s12">
+                  <i class="material-icons prefix pink-text accent-2">phone</i>
+                  <input placeholder="206-555-5555" id="phone" type="number" class="validate">
+                  <label for="phone">Telephone</label>
+                </div><br>
+                <div class="input-field col s12">
+                  <i class="material-icons prefix pink-text accent-2">business</i>
+                  <input placeholder="One Microsoft Way Redmond, WA 98052-6399" id="address" type="text" class="validate">
+                  <label for="address">Address</label><br><br><br>
+                  <a href="order.html" id="download-button" class="btn-large waves-effect waves-light pink center order-button">PLACE ORDER</a>
+                </div>
+              </div>
+            </form>
+          </div>
+
+
         </div>
       </div>
     </div>
   </div>
-
-
-
-
-
-
-
-
   <br><br>
   </div>
   </div>
@@ -163,6 +187,7 @@
 
   <!--  Scripts-->
   <script type="text/javascript" src="js/main.js"></script>
+  <script type="text/javascript" src="js/order.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
 
 </body>
